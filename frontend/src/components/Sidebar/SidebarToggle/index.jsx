@@ -90,8 +90,9 @@ export function ToggleSidebarButton({ showSidebar, setShowSidebar }) {
         }
       >
         <SidebarSimple
-          className="text-theme-text-secondary hover:text-theme-text-primary"
+          className="hover:text-theme-text-primary"
           size={24}
+          color={showSidebar ? `black`: `white`}
         />
       </button>
       <Tooltip

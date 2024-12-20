@@ -1,6 +1,6 @@
 import useUser from "@/hooks/useUser";
 import paths from "@/utils/paths";
-import { ArrowUUpLeft, Wrench } from "@phosphor-icons/react";
+import { ArrowUUpLeft, Gear } from "@phosphor-icons/react";
 import { Link } from "react-router-dom";
 import { useMatch } from "react-router-dom";
 
@@ -39,7 +39,7 @@ export default function SettingsButton() {
         data-tooltip-id="footer-item"
         data-tooltip-content="Open settings"
       >
-        <Wrench
+        <Gear
           className="h-5 w-5"
           weight="fill"
           color="var(--theme-sidebar-footer-icon-fill)"

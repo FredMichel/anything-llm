@@ -44,7 +44,7 @@ const TRANSLATIONS = {
   // Page Definitions
   login: {
     "multi-user": {
-      welcome: "Bienvenue à",
+      welcome: "Bienvenue sur ",
       "placeholder-username": "Nom d'utilisateur",
       "placeholder-password": "Mot de passe",
       login: "Connexion",

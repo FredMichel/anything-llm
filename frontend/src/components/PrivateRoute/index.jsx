@@ -6,7 +6,7 @@ import paths from "@/utils/paths";
 import { AUTH_TIMESTAMP, AUTH_TOKEN, AUTH_USER } from "@/utils/constants";
 import { userFromStorage } from "@/utils/request";
 import System from "@/models/system";
-import UserMenu from "../UserMenu";
+import Header from "../Header";
 
 // Used only for Multi-user mode only as we permission specific pages based on auth role.
 // When in single user mode we just bypass any authchecks.
@@ -94,9 +94,9 @@ export function AdminRoute({ Component }) {
 
   const user = userFromStorage();
   return isAuthd && (user?.role === "admin" || !multiUserMode) ? (
-    <UserMenu>
+    <Header>
       <Component />
-    </UserMenu>
+    </Header>
   ) : (
     <Navigate to={paths.home()} />
   );
@@ -115,9 +115,9 @@ export function ManagerRoute({ Component }) {
 
   const user = userFromStorage();
   return isAuthd && (user?.role !== "default" || !multiUserMode) ? (
-    <UserMenu>
+    <Header>
       <Component />
-    </UserMenu>
+    </Header>
   ) : (
     <Navigate to={paths.home()} />
   );
@@ -132,9 +132,9 @@ export default function PrivateRoute({ Component }) {
   }
 
   return isAuthd ? (
-    <UserMenu>
+    <Header>
       <Component />
-    </UserMenu>
+    </Header>
   ) : (
     <Navigate to={paths.login(true)} />
   );

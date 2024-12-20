@@ -51,24 +51,24 @@
 [data-theme="light"] {
   --theme-loader: #000000;
 
-  --theme-bg-primary: #ffffff;
+  --theme-bg-primary: #ffffff;/*fond de la page (apparait à la transition)*/
   --theme-bg-secondary: #ffffff;
-  --theme-bg-sidebar: #edf2fa;
-  --theme-bg-container: #f9fbfd;
+  --theme-bg-sidebar: #b7c5cc;/*fond du menu de gauche*/
+  --theme-bg-container: #f9fbfd;/* fond du container de la page*/
 
   --theme-bg-chat: #ffffff;
-  --theme-bg-chat-input: #eaeaea;
-  --theme-text-primary: #0e0f0f;
-  --theme-text-secondary: #7a7d7e;
-  --theme-sidebar-item-default: #ffffff;
-  --theme-sidebar-item-selected: #ffffff;
+  --theme-bg-chat-input: #eaeaea; /* fond rond icon du chat*/
+  --theme-text-primary: #0e0f0f;/* texte inclus texte boutons*/
+  --theme-text-secondary: #7a7d7e;/* sous texte*/
+  --theme-sidebar-item-default: #ffffff; /* bouton workspace*/
+  --theme-sidebar-item-selected: #ffffff; /*bouton workspace selected*/
   --theme-sidebar-item-hover: #c8efff;
 
   --theme-sidebar-item-text-inactive: #7a7d7e;
   --theme-sidebar-item-text-active: #184558;
 
-  --theme-sidebar-item-workspace-active: #000000;
-  --theme-sidebar-item-workspace-inactive: #7a7d7e;
+  --theme-sidebar-item-workspace-active: #000000;/* icone bouton workspace active*/
+  --theme-sidebar-item-workspace-inactive: #7a7d7e;/* icone workspace inactive*/
 
   --theme-sidebar-subitem-default: transparent;
   --theme-sidebar-subitem-selected: #e2e7ee;
@@ -76,11 +76,11 @@
   --theme-sidebar-subitem-hover: #e2e7ee;
   --theme-sidebar-border: #d3d4d4;
 
-  --theme-sidebar-footer-icon: #ffffff;
-  --theme-sidebar-footer-icon-fill: #6e6f6f;
+  --theme-sidebar-footer-icon: #ffffff;/* fond icon bas gauche*/
+  --theme-sidebar-footer-icon-fill: #6e6f6f;/*couleur image icon bas gauche*/
   --theme-sidebar-footer-icon-hover: #d8d6d6;
 
-  --theme-chat-input-border: #cccccc;
+  --theme-chat-input-border: #f43f5e;
   --theme-action-menu-bg: #eaeaea;
   --theme-action-menu-item-hover: rgba(0, 0, 0, 0.1);
   --theme-settings-input-bg: #f5f5f5;
